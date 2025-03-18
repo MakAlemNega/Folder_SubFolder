@@ -1,0 +1,15 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.TreeView;assembly=Syncfusion.Maui.TreeView"
+             xmlns:local="clr-namespace:Folder_SubFolder"
+             x:Class="Folder_SubFolder.MainPage">
+
+    <syncfusion:SfTreeView ItemsSource="{Binding Folders}"
+                           ChildPropertyName="SubFolders">
+        <syncfusion:SfTreeView.ItemTemplate>
+            <DataTemplate>
+                <Label Text="{Binding Name}" />
+            </DataTemplate>
+        </syncfusion:SfTreeView.ItemTemplate>
+    </syncfusion:SfTreeView>
+</ContentPage>

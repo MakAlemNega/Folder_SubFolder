@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Folder_SubFolder.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.TreeView;assembly=Syncfusion.Maui.TreeView"
+    xmlns:local="clr-namespace:Folder_SubFolder"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Folder_SubFolder">
+
+    <Shell.FlyoutHeader>
+        <Grid Padding="10">
+            <Label Text="My App Menu" FontAttributes="Bold" FontSize="24"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutContent>
+        <ContentView Padding="15">
+            <syncfusion:SfTreeView x:Name="MenuTreeView"
+                                   ItemsSource="{Binding Folders}"
+                                   ChildPropertyName="SubFolders"
+                                   SelectionMode="Single"
+                                   SelectionChanged="MenuTreeView_SelectionChanged">
+                <syncfusion:SfTreeView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Name}" 
+                               FontSize="18"
+                               Padding="5,10"/>
+                    </DataTemplate>
+                </syncfusion:SfTreeView.ItemTemplate>
+            </syncfusion:SfTreeView>
+        </ContentView>
+    </Shell.FlyoutContent>
+    
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

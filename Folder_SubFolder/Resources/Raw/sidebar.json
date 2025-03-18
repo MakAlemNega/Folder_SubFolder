@@ -1,0 +1,2331 @@
+{
+    "nodesList": [
+        {
+            "accountId": 0,
+            "id": 9108,
+            "nodeId": 0,
+            "stringid": "_person.node_",
+            "name": "9108",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_selector_",
+                            "properties": {
+                                "width": "30%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "grid",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": true,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "gridlines": "both",
+                                    "filtering": false,
+                                    "pdf": true,
+                                    "excel": true
+                                },
+                                "columns": [
+                                    {
+                                        "field": "Name",
+                                        "label": "_name_",
+                                        "width": "25%",
+                                        "hasTemplate": false
+                                    }
+                                ],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "_menu.new_",
+                                            "action": "_new_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.edit_",
+                                            "items": [
+                                                {
+                                                    "label": "_menu.delete_",
+                                                    "action": "_delete_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.copy_",
+                                                    "action": "_copy_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_edit_"
+                                        },
+                                        {
+                                            "label": "_menu.filter_",
+                                            "items": [
+                                                {
+                                                    "label": "_menu.showall_",
+                                                    "action": "_showall_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.show.employed_",
+                                                    "action": "_showemployed_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.select.gender_",
+                                                    "items": [
+                                                        {
+                                                            "label": "_menu.show.male_",
+                                                            "action": "_showmale_",
+                                                            "icon": "e-icons e-delete",
+                                                            "items": [],
+                                                            "check": false
+                                                        },
+                                                        {
+                                                            "label": "_menu.show.female_",
+                                                            "action": "_showfemale_",
+                                                            "icon": "e-icons e-delete",
+                                                            "items": [],
+                                                            "check": false
+                                                        }
+                                                    ],
+                                                    "check": false,
+                                                    "id": "_gender.filter_"
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_filter_"
+                                        },
+                                        {
+                                            "label": "_menu.export_",
+                                            "items": [
+                                                {
+                                                    "label": "_menu.export.pdf_",
+                                                    "action": "_export.pdf_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.export.excel_",
+                                                    "action": "_export.excel_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_export_"
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "75%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "tabs",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": false,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "filtering": false,
+                                    "pdf": false,
+                                    "excel": false
+                                },
+                                "columns": [],
+                                "elements": [],
+                                "tabs": [
+                                    {
+                                        "label": "_bio_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_tab.id_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_cv_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_tab.contacts_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_bio.education_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_experience_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_skills_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    }
+                                ],
+                                "contextMenu": {
+                                    "items": []
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "endpoint": "Person",
+                        "payload": "Id=0, PersonInfo= 383, redis=2"
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            }
+        },
+        {
+            "accountId": 11011,
+            "id": 9107,
+            "nodeId": 0,
+            "stringid": "_employee.node_",
+            "name": "9107",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_selector_",
+                            "properties": {
+                                "width": "25%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "grid",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": true,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "gridlines": "both",
+                                    "filtering": false,
+                                    "pdf": true,
+                                    "excel": true
+                                },
+                                "columns": [
+                                    {
+                                        "field": "Name",
+                                        "label": "_name_",
+                                        "width": "25%",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "Person.Name",
+                                        "label": "_preson.name_",
+                                        "hasTemplate": false
+                                    }
+                                ],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "_menu.new_",
+                                            "action": "_new_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.edit_",
+                                            "items": [
+                                                {
+                                                    "label": "_menu.delete_",
+                                                    "action": "_delete_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.copy_",
+                                                    "action": "_copy_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_edit_"
+                                        },
+                                        {
+                                            "label": "_menu.filter_",
+                                            "items": [
+                                                {
+                                                    "label": "_menu.showall_",
+                                                    "action": "_showall_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.showactive_",
+                                                    "action": "_showactive_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_filter_"
+                                        },
+                                        {
+                                            "label": "_menu.export_",
+                                            "items": [
+                                                {
+                                                    "label": "Pdf",
+                                                    "action": "_export.pdf_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Excel",
+                                                    "action": "_export.excel_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_export_"
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.options_",
+                                            "items": [
+                                                {
+                                                    "label": "_menu.grouping_",
+                                                    "action": "_selector.grouping.show_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.filtering:",
+                                                    "action": "_selector.filtering.show_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "_menu.selection_",
+                                                    "items": [
+                                                        {
+                                                            "label": "_menu.checkbox_",
+                                                            "action": "_selector.Selection.checkbox_",
+                                                            "items": [],
+                                                            "check": false
+                                                        }
+                                                    ],
+                                                    "check": false,
+                                                    "id": "_selector.toolbar_"
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_selector.toolbar_"
+                                        },
+                                        {
+                                            "label": "Grid..",
+                                            "items": [
+                                                {
+                                                    "label": "None",
+                                                    "action": "_selector.grid.none_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Vertical",
+                                                    "action": "_selector.grid.vertical_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Horizontal",
+                                                    "action": "_selector.grid.horizontal_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Both",
+                                                    "action": "_selector.grid.both_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_selector.grid_"
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "75%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "tabs",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": false,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "filtering": false,
+                                    "pdf": false,
+                                    "excel": false
+                                },
+                                "columns": [],
+                                "elements": [],
+                                "tabs": [
+                                    {
+                                        "label": "_dossier_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": true,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "gridlines": "both",
+                                                "filtering": true,
+                                                "pdf": true,
+                                                "excel": true
+                                            },
+                                            "columns": [
+                                                {
+                                                    "field": "Document.Name",
+                                                    "label": "_reference_",
+                                                    "width": "15%",
+                                                    "hasTemplate": false
+                                                },
+                                                {
+                                                    "field": "Date",
+                                                    "label": "_date_",
+                                                    "width": "10%",
+                                                    "type": "date",
+                                                    "sort": "descending",
+                                                    "hasTemplate": false
+                                                },
+                                                {
+                                                    "field": "Account.Name",
+                                                    "label": "_account_",
+                                                    "width": "20%",
+                                                    "edit": "dropdown",
+                                                    "hasTemplate": false
+                                                },
+                                                {
+                                                    "field": "Note",
+                                                    "label": "_note_",
+                                                    "hasTemplate": false
+                                                }
+                                            ],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": [
+                                                    {
+                                                        "label": "_menu.info_",
+                                                        "action": "_info_",
+                                                        "items": [],
+                                                        "check": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_contract_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": true,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "gridlines": "both",
+                                                "filtering": false,
+                                                "pdf": true,
+                                                "excel": true
+                                            },
+                                            "columns": [
+                                                {
+                                                    "field": "Name",
+                                                    "label": "_name_",
+                                                    "width": "10%",
+                                                    "hasTemplate": false
+                                                },
+                                                {
+                                                    "field": "DateStart",
+                                                    "label": "_date_",
+                                                    "width": "10%",
+                                                    "type": "date",
+                                                    "sort": "descending",
+                                                    "hasTemplate": false
+                                                }
+                                            ],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": [
+                                                    {
+                                                        "label": "_menu.info_",
+                                                        "action": "_info_",
+                                                        "items": [],
+                                                        "check": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_attendance_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": [
+                                                    {
+                                                        "label": "_menu.info_",
+                                                        "action": "_info_",
+                                                        "items": [],
+                                                        "check": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_payslip_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": [
+                                                    {
+                                                        "label": "_menu.info_",
+                                                        "action": "_info_",
+                                                        "items": [],
+                                                        "check": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_leaves_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": [
+                                                    {
+                                                        "label": "_menu.setas_",
+                                                        "items": [
+                                                            {
+                                                                "label": "_leave.annual_",
+                                                                "action": "_set.account_:12031",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12031"
+                                                            },
+                                                            {
+                                                                "label": "_leave.maternity_",
+                                                                "action": "_set.account_:12033",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12033"
+                                                            },
+                                                            {
+                                                                "label": "_leave.paternity_",
+                                                                "action": "_set.account_:12035",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12035"
+                                                            },
+                                                            {
+                                                                "label": "_leave.sick_",
+                                                                "action": "_set.account_:12037",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12037"
+                                                            },
+                                                            {
+                                                                "label": "_leave.compassionate_",
+                                                                "action": "_set.account_:12039",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12039"
+                                                            },
+                                                            {
+                                                                "label": "_leave.upaid_",
+                                                                "action": "_set.account_:12041",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12041"
+                                                            },
+                                                            {
+                                                                "label": "_leave.mission_",
+                                                                "action": "_set.account_:12043",
+                                                                "items": [],
+                                                                "check": false,
+                                                                "id": "12043"
+                                                            }
+                                                        ],
+                                                        "check": false
+                                                    },
+                                                    {
+                                                        "action": "_separator_",
+                                                        "items": [],
+                                                        "check": false
+                                                    },
+                                                    {
+                                                        "label": "_menu.edit_",
+                                                        "items": [
+                                                            {
+                                                                "label": "_menu.delete_",
+                                                                "action": "_delete_",
+                                                                "icon": "e-icons e-delete",
+                                                                "items": [],
+                                                                "check": false
+                                                            }
+                                                        ],
+                                                        "check": false,
+                                                        "id": "_edit_"
+                                                    },
+                                                    {
+                                                        "action": "_separator_",
+                                                        "items": [],
+                                                        "check": false
+                                                    },
+                                                    {
+                                                        "label": "_menu.info_",
+                                                        "action": "_info_",
+                                                        "items": [],
+                                                        "check": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_loans_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_rewards_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_disciplinary_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "label": "_obligation_",
+                                        "component": {
+                                            "features": {
+                                                "sorting": false,
+                                                "selection": false,
+                                                "checkbox": false,
+                                                "grouping": false,
+                                                "filtering": false,
+                                                "pdf": false,
+                                                "excel": false
+                                            },
+                                            "columns": [],
+                                            "elements": [],
+                                            "tabs": [],
+                                            "contextMenu": {
+                                                "items": []
+                                            }
+                                        }
+                                    }
+                                ],
+                                "contextMenu": {
+                                    "items": []
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "endpoint": "Employee",
+                        "payload": "Id=0, Info= 383, redis=2, dossier = {DocumentInfo=3}, contract = {contractInfo=3}"
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            },
+            "onExpand": {
+                "group": {
+                    "id": 11011,
+                    "children": [
+                        {
+                            "id": 12073,
+                            "stringId": "_job.executive_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 12017,
+                            "stringId": "_dep.administration_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 12020,
+                            "stringId": "_dep.sales_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 12028,
+                            "stringId": "_dep.operations_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 12029,
+                            "stringId": "_dep.services_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": true
+                        }
+                    ],
+                    "stringId": "_department.accounts_",
+                    "order": 0,
+                    "isGroup": false,
+                    "loadChildren": true
+                }
+            }
+        },
+        {
+            "accountId": 0,
+            "id": 9112,
+            "nodeId": 0,
+            "stringid": "_payroll.node_",
+            "name": "9112",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "100%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "grid",
+                                "features": {
+                                    "sorting": true,
+                                    "selection": true,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "gridlines": "both",
+                                    "filtering": false,
+                                    "pdf": true,
+                                    "excel": true
+                                },
+                                "columns": [
+                                    {
+                                        "field": "Name",
+                                        "label": "_name_",
+                                        "width": "20%",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.BasicSalary",
+                                        "label": "_income.base_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.Additions",
+                                        "label": "_income.taxable.addition_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.Taxable",
+                                        "label": "_income.Salary.earned_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.SalaryTax",
+                                        "label": "_tax.salary_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.PEmployee",
+                                        "label": "_tax.pension.enployee_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.NetPay",
+                                        "label": "_salary.netpay_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.Repayments",
+                                        "label": "_salary.repayment_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.NetPay",
+                                        "label": "_salary.netpay_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "PaySlip.Summary.PEmployer",
+                                        "label": "_tax.pension.enployer_",
+                                        "width": "10%",
+                                        "type": "decimal",
+                                        "format": "#,##0.00",
+                                        "align": "right",
+                                        "hasTemplate": false
+                                    }
+                                ],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "_menu.remove_",
+                                            "action": "_menu.remove_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "objectType": "Period",
+                        "endpoint": "Payrolls",
+                        "payload": ""
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            },
+            "onExpand": {
+                "group": {
+                    "id": 0,
+                    "order": 0,
+                    "isGroup": false,
+                    "loadChildren": false
+                }
+            }
+        },
+        {
+            "accountId": 10001,
+            "id": 9109,
+            "nodeId": 0,
+            "stringid": "_correspondence.node_",
+            "name": "9109",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_selector_",
+                            "properties": {
+                                "width": "30%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "grid",
+                                "features": {
+                                    "sorting": true,
+                                    "selection": true,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "gridlines": "both",
+                                    "filtering": false,
+                                    "pdf": true,
+                                    "excel": true
+                                },
+                                "columns": [
+                                    {
+                                        "field": "Name",
+                                        "label": "_name_",
+                                        "width": "100px",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "Date",
+                                        "label": "_date_",
+                                        "width": "80px",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "Sender.Name",
+                                        "label": "_sender_",
+                                        "width": "30%",
+                                        "hasTemplate": false
+                                    },
+                                    {
+                                        "field": "Recipient.Name",
+                                        "label": "_recipient_",
+                                        "width": "30%",
+                                        "hasTemplate": false
+                                    }
+                                ],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "New ..",
+                                            "action": "_new_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "Edit",
+                                            "items": [
+                                                {
+                                                    "label": "Delete",
+                                                    "action": "_delete_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Copy",
+                                                    "action": "_copy_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_edit_"
+                                        },
+                                        {
+                                            "label": "Filter",
+                                            "items": [
+                                                {
+                                                    "label": "Show All",
+                                                    "action": "_showall_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Show Employed",
+                                                    "action": "_showemployed_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_filter_"
+                                        },
+                                        {
+                                            "label": "Export",
+                                            "items": [
+                                                {
+                                                    "label": "Pdf",
+                                                    "action": "_export.pdf_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Excel",
+                                                    "action": "_export.excel_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_export_"
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "75%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "document",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": false,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "filtering": false,
+                                    "pdf": false,
+                                    "excel": false
+                                },
+                                "columns": [],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": []
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "endpoint": "Correspondence",
+                        "payload": "Id=0, Info= 1, redis=2"
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            },
+            "onExpand": {
+                "group": {
+                    "id": 10001,
+                    "children": [
+                        {
+                            "id": 11001,
+                            "children": [
+                                {
+                                    "id": 12001,
+                                    "children": [
+                                        {
+                                            "id": 13001,
+                                            "stringId": "_hr.application_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13002,
+                                            "stringId": "_hr.outcome_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13003,
+                                            "stringId": "_hr.interview_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13004,
+                                            "stringId": "_hr.offer_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        }
+                                    ],
+                                    "stringId": "_recruitment.group_",
+                                    "order": 0,
+                                    "isGroup": true,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12002,
+                                    "children": [
+                                        {
+                                            "id": 13005,
+                                            "stringId": "_hr.contract_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13006,
+                                            "stringId": "_hr.onboarding_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13007,
+                                            "stringId": "_hr.memo_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13008,
+                                            "stringId": "_hr.upgrade_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13009,
+                                            "stringId": "_hr.dismissal_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13010,
+                                            "stringId": "_hr.resignation_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13011,
+                                            "stringId": "_hr.termination_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13012,
+                                            "stringId": "_hr.reccomendation_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13013,
+                                            "stringId": "_hr.compensation_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        }
+                                    ],
+                                    "stringId": "_employment.group_",
+                                    "order": 0,
+                                    "isGroup": true,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12003,
+                                    "children": [
+                                        {
+                                            "id": 13014,
+                                            "children": [
+                                                {
+                                                    "id": 14001,
+                                                    "stringId": "_performance.investigation_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14002,
+                                                    "stringId": "_performance.hearing_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14003,
+                                                    "stringId": "_performance.outcome_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14004,
+                                                    "stringId": "_performance.violation_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14005,
+                                                    "stringId": "_performance.allegation_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14006,
+                                                    "stringId": "_performance.appeal_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14007,
+                                                    "stringId": "_performance.warning_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14008,
+                                                    "stringId": "_performance.reprimand_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                },
+                                                {
+                                                    "id": 14009,
+                                                    "stringId": "_performance.suspension_",
+                                                    "order": 0,
+                                                    "isGroup": false,
+                                                    "loadChildren": true
+                                                }
+                                            ],
+                                            "stringId": "_disciplinary.accounts_",
+                                            "order": 0,
+                                            "isGroup": true,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13015,
+                                            "stringId": "_performance.review_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13016,
+                                            "stringId": "_performance.demotion_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13017,
+                                            "stringId": "_performance.grivances_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        }
+                                    ],
+                                    "stringId": "_performance.group_",
+                                    "order": 0,
+                                    "isGroup": true,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12004,
+                                    "children": [
+                                        {
+                                            "id": 13050,
+                                            "stringId": "_leave.request_",
+                                            "order": 0,
+                                            "isGroup": true,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13051,
+                                            "stringId": "_leave.authorization_",
+                                            "order": 0,
+                                            "isGroup": true,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13052,
+                                            "stringId": "_leave.rejection_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13053,
+                                            "stringId": "_leave.cancellation_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13054,
+                                            "stringId": "_leave.returnreminder_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13055,
+                                            "stringId": "_leave.balance_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13056,
+                                            "stringId": "_leave.policy_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        }
+                                    ],
+                                    "stringId": "_leave.group_",
+                                    "order": 0,
+                                    "isGroup": true,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12005,
+                                    "children": [
+                                        {
+                                            "id": 13020,
+                                            "stringId": "_reimbursement.request_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13021,
+                                            "stringId": "_reimbursement.approval_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        },
+                                        {
+                                            "id": 13022,
+                                            "stringId": "_reimbursement.rejection_",
+                                            "order": 0,
+                                            "isGroup": false,
+                                            "loadChildren": true
+                                        }
+                                    ],
+                                    "stringId": "_reimbursement.group_",
+                                    "order": 0,
+                                    "isGroup": true,
+                                    "loadChildren": true
+                                }
+                            ],
+                            "stringId": "_personnel.accounts_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 11002,
+                            "children": [
+                                {
+                                    "id": 12010,
+                                    "stringId": "_inquiry.letter_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12011,
+                                    "stringId": "_inquiry.followup_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12012,
+                                    "stringId": "_inquiry.adjustment_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                }
+                            ],
+                            "stringId": "_inquiry.group_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 11003,
+                            "children": [
+                                {
+                                    "id": 12006,
+                                    "stringId": "_aknowlegment.letter_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12007,
+                                    "stringId": "_aknowlegment.complaint_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12008,
+                                    "stringId": "_aknowlegment.apology_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12009,
+                                    "stringId": "_aknowlegment.appreciation_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                }
+                            ],
+                            "stringId": "_aknowlegment.group_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": true
+                        },
+                        {
+                            "id": 11004,
+                            "children": [
+                                {
+                                    "id": 12013,
+                                    "stringId": "_business.cover_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12014,
+                                    "stringId": "_business.order_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12015,
+                                    "stringId": "_business.sales_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                },
+                                {
+                                    "id": 12016,
+                                    "stringId": "_business.minutes_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": true
+                                }
+                            ],
+                            "stringId": "_business.group_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": true
+                        }
+                    ],
+                    "stringId": "_correspondence.accounts_",
+                    "order": 0,
+                    "isGroup": false,
+                    "loadChildren": true
+                }
+            }
+        },
+        {
+            "accountId": 10014,
+            "id": 9110,
+            "nodeId": 0,
+            "stringid": "_template.node_",
+            "name": "9110",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_selector_",
+                            "properties": {
+                                "width": "20%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "grid",
+                                "features": {
+                                    "sorting": true,
+                                    "selection": true,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "gridlines": "both",
+                                    "filtering": false,
+                                    "pdf": true,
+                                    "excel": true
+                                },
+                                "columns": [
+                                    {
+                                        "field": "Name",
+                                        "label": "_name_",
+                                        "width": "100%",
+                                        "hasTemplate": false
+                                    }
+                                ],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "New ..",
+                                            "action": "_new_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "100%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "template",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": false,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "filtering": false,
+                                    "pdf": false,
+                                    "excel": false
+                                },
+                                "columns": [],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": []
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "endpoint": "Template",
+                        "payload": "Id=0, Info= 1, redis=2",
+                        "namefrom": "stringid"
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            },
+            "onExpand": {
+                "group": {
+                    "id": 10014,
+                    "children": [
+                        {
+                            "id": 11040,
+                            "children": [
+                                {
+                                    "id": 12031,
+                                    "stringId": "_leave.annual_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12033,
+                                    "stringId": "_leave.maternity_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12035,
+                                    "stringId": "_leave.paternity_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12037,
+                                    "stringId": "_leave.sick_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12039,
+                                    "stringId": "_leave.compassionate_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12041,
+                                    "stringId": "_leave.upaid_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12043,
+                                    "stringId": "_leave.mission_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                }
+                            ],
+                            "stringId": "_group.menu.leaves_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": false
+                        },
+                        {
+                            "id": 11042,
+                            "children": [
+                                {
+                                    "id": 12001,
+                                    "children": [],
+                                    "stringId": "_recruitment.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12002,
+                                    "children": [],
+                                    "stringId": "_employment.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12003,
+                                    "children": [],
+                                    "stringId": "_performance.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12004,
+                                    "children": [],
+                                    "stringId": "_leave.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 12005,
+                                    "children": [],
+                                    "stringId": "_reimbursement.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                }
+                            ],
+                            "stringId": "_templates.hr_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": false
+                        },
+                        {
+                            "id": 11043,
+                            "children": [
+                                {
+                                    "id": 11002,
+                                    "children": [],
+                                    "stringId": "_inquiry.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 11003,
+                                    "children": [],
+                                    "stringId": "_aknowlegment.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                },
+                                {
+                                    "id": 11004,
+                                    "children": [],
+                                    "stringId": "_business.group_",
+                                    "order": 0,
+                                    "isGroup": false,
+                                    "loadChildren": false
+                                }
+                            ],
+                            "stringId": "_templates.general_",
+                            "order": 0,
+                            "isGroup": true,
+                            "loadChildren": false
+                        }
+                    ],
+                    "stringId": "_template.accounts_",
+                    "order": 0,
+                    "isGroup": false,
+                    "loadChildren": false
+                }
+            }
+        },
+        {
+            "accountId": 11011,
+            "id": 9111,
+            "nodeId": 0,
+            "stringid": "_job.node_",
+            "name": "9111",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_selector_",
+                            "properties": {
+                                "width": "20%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "grid",
+                                "features": {
+                                    "sorting": true,
+                                    "selection": true,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "gridlines": "both",
+                                    "filtering": false,
+                                    "pdf": true,
+                                    "excel": true
+                                },
+                                "columns": [
+                                    {
+                                        "field": "Name",
+                                        "label": "_name_",
+                                        "width": "100%",
+                                        "hasTemplate": false
+                                    }
+                                ],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "New ..",
+                                            "action": "_new_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "Edit",
+                                            "items": [
+                                                {
+                                                    "label": "Delete",
+                                                    "action": "_delete_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Copy",
+                                                    "action": "_copy_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_edit_"
+                                        },
+                                        {
+                                            "label": "Filter",
+                                            "items": [
+                                                {
+                                                    "label": "Show All",
+                                                    "action": "_showall_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Show Active",
+                                                    "action": "_showactive_",
+                                                    "icon": "e-icons e-delete",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_filter_"
+                                        },
+                                        {
+                                            "label": "Export",
+                                            "items": [
+                                                {
+                                                    "label": "Pdf",
+                                                    "action": "_export.pdf_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Excel",
+                                                    "action": "_export.excel_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_export_"
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "Options..",
+                                            "items": [
+                                                {
+                                                    "label": "Grouping",
+                                                    "action": "_selector.grouping.show_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Filtering",
+                                                    "action": "_selector.filtering.show_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Selection",
+                                                    "items": [
+                                                        {
+                                                            "label": "CheckBox",
+                                                            "action": "_selector.Selection.checkbox_",
+                                                            "items": [],
+                                                            "check": false
+                                                        }
+                                                    ],
+                                                    "check": false,
+                                                    "id": "_selector.toolbar_"
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_selector.toolbar_"
+                                        },
+                                        {
+                                            "label": "Grid..",
+                                            "items": [
+                                                {
+                                                    "label": "None",
+                                                    "action": "_selector.grid.none_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Vertical",
+                                                    "action": "_selector.grid.vertical_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Horizontal",
+                                                    "action": "_selector.grid.horizontal_",
+                                                    "items": [],
+                                                    "check": false
+                                                },
+                                                {
+                                                    "label": "Both",
+                                                    "action": "_selector.grid.both_",
+                                                    "items": [],
+                                                    "check": false
+                                                }
+                                            ],
+                                            "check": false,
+                                            "id": "_selector.grid_"
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "100%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "document",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": false,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "filtering": false,
+                                    "pdf": false,
+                                    "excel": false
+                                },
+                                "columns": [],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": []
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "endpoint": "JobOrder",
+                        "payload": "Id=0, Info= 1, redis=2",
+                        "namefrom": "stringid"
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            },
+            "onExpand": {
+                "group": {
+                    "id": 11011,
+                    "children": [
+                        {
+                            "id": 12073,
+                            "stringId": "_job.executive_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": false
+                        },
+                        {
+                            "id": 12017,
+                            "stringId": "_dep.administration_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": false
+                        },
+                        {
+                            "id": 12020,
+                            "stringId": "_dep.sales_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": false
+                        },
+                        {
+                            "id": 12028,
+                            "stringId": "_dep.operations_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": false
+                        },
+                        {
+                            "id": 12029,
+                            "stringId": "_dep.services_",
+                            "order": 0,
+                            "isGroup": false,
+                            "loadChildren": false
+                        }
+                    ],
+                    "stringId": "_department.accounts_",
+                    "order": 0,
+                    "isGroup": false,
+                    "loadChildren": false
+                }
+            }
+        },
+        {
+            "accountId": 0,
+            "id": 9125,
+            "nodeId": 0,
+            "stringid": "_leavemanagement.node_",
+            "name": "9125",
+            "onNode": {
+                "dataViewer": {
+                    "panels": [
+                        {
+                            "id": "_dataviewer_",
+                            "properties": {
+                                "width": "100%",
+                                "aspect": {},
+                                "location": {}
+                            },
+                            "component": {
+                                "type": "leavemanagement",
+                                "features": {
+                                    "sorting": false,
+                                    "selection": false,
+                                    "checkbox": false,
+                                    "grouping": false,
+                                    "filtering": false,
+                                    "pdf": false,
+                                    "excel": false
+                                },
+                                "columns": [],
+                                "elements": [],
+                                "tabs": [],
+                                "contextMenu": {
+                                    "items": [
+                                        {
+                                            "label": "_menu.edit_",
+                                            "action": "_edit_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "action": "_separator_",
+                                            "items": [],
+                                            "check": false
+                                        },
+                                        {
+                                            "label": "_menu.info_",
+                                            "action": "_info_",
+                                            "items": [],
+                                            "check": false
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "datasource": {
+                        "objectType": "Leave",
+                        "endpoint": "Leaves",
+                        "payload": ""
+                    }
+                }
+            },
+            "onLeaf": {
+                "dataViewer": {
+                    "panels": []
+                }
+            },
+            "onExpand": {
+                "group": {
+                    "id": 0,
+                    "order": 0,
+                    "isGroup": false,
+                    "loadChildren": false
+                }
+            }
+        }
+    ]
+}
